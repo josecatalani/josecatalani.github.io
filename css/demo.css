@@ -15,7 +15,6 @@
 .clearfix:after { clear: both; }
 
 body {
-	background: white;
 	color: #fffce1;
 	font-weight: 400;
 	font-size: 1em;

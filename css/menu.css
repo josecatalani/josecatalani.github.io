@@ -8,7 +8,6 @@ body,
 }
 
 .container {
-	background: #373a47;
 }
 
 .menu-wrap a {
@@ -27,7 +26,6 @@ body,
 
 .content {
 	position: relative;
-	background: #b4bad2;
 }
 
 .content::before {
@@ -68,7 +66,7 @@ body,
 	right: 0.5em;
 	bottom: 0.5em;
 	left: 0.5em;
-	background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+	background: linear-gradient(#ffffff 20%, transparent 20%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 80%, #ffffff 80%);
 	content: '';
 }
 
@@ -114,6 +112,7 @@ body,
 
 /* Menu */
 .menu-wrap {
+        background: #323232;
 	position: absolute;
 	bottom: 0;
 	left: 0;

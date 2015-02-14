@@ -53,13 +53,12 @@
 	font-weight: 900;
 	font-size: 4em;
 	line-height: 1;
+        padding-left: 1em;
 }
 
 .intro__subtitle {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-align-items: center;
-	align-items: center;
+        padding-left: 4em;
+        text-align: right;
 }
 
 .intro__description {
@@ -90,7 +89,7 @@
 
 .icon rect,
 .icon line {
-	stroke: #dbdbdb;
+	stroke: #ffffff;
 	fill: none;
 	stroke-width: 2px;
 }
@@ -178,6 +177,7 @@
 
 .item__title {
 	position: absolute;
+        background: #2a2e39;
 	bottom: 0;
 	margin: 0;
 	padding: 1em;
