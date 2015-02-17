@@ -13,9 +13,6 @@
                 <link rel="stylesheet" type="text/css" href="css/normalize.css" />
                 <link rel="stylesheet" type="text/css" href="css/demo.css" />
                 <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-                <link rel="stylesheet" type="text/css" href="css/menu.css" />
-                <link rel="stylesheet" type="text/css" href="css/effect.css" />
-                <link rel="stylesheet" type="text/css" href="css/layout.css" />
                 <script src="js/snap.svg-min.js"></script>
                 <script src="js/modernizr.custom.js"></script>
                 <!--[if IE]>
@@ -24,13 +21,28 @@
         </head>
         <body>
                 <div id="container" class="container">
+
+
+                        <div id="about" class="inner-content">
+                                oláa
+                        </div>
+
+
+                        <div id="contact" class="inner-content">
+                                oláa
+                        </div>
+
+                        <div id="comments" class="inner-content">
+                                oláa
+                        </div>
+
                         <div class="menu-wrap">
                                 <nav class="menu">
                                         <div class="icon-list">
-                                                <a href="#"><i class="fa fa-code"></i><span>Sobre</span></a>
-                                                <a href="#"><i class="fa fa-fw fa-desktop"></i><span>Projetos</span></a>
-                                                <a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Contato</span></a>
-                                                <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comentários</span></a>
+                                                <a id="about-menu" href="#"><i class="fa fa-code"></i><span>Sobre</span></a>
+                                                <a id="projects-menu" href="#"><i class="fa fa-fw fa-desktop"></i><span>Projetos</span></a>
+                                                <a id="contact-menu" href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Contato</span></a>
+                                                <a id="comments-menu" href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comentários</span></a>
                                                 <a href="#"> | </a>
                                                 <a href="#"><i class="fa fa-github-alt"></i><span>josecatalani</span></a>
                                         </div>
@@ -44,7 +56,13 @@
                                         <div class="ip-main">
                                                 <div id="intro-container">
                                                         <header class="intro">
-                                                            <!--<img class="intro__image" src="img/background.jpg" alt=""/>-->
+                                                                <!-- Spider -->
+                                                                <div id="large-header" class="large-header">
+                                                                        <canvas id="demo-canvas"></canvas>
+                                                                </div>
+                                                                <!-- Fim Spider -->
+
+
                                                                 <div class="intro__content">
                                                                         <div class="intro__subtitle">
                                                                                 <button class="trigger">
@@ -68,6 +86,7 @@
                                                                 <a href="#" class="item">
                                                                         <img class="item__image" src="img/projetos/vidabela_thumb.jpg" alt="Vida Bela"/>
                                                                         <h2 class="item__title">Vida Bela</h2>
+                                                                        <button type="button" class="open-description-button">X</button>
                                                                 </a>
                                                                 <a href="#" class="item">
                                                                         <img class="item__image" src="img/projetos/bobo_thumb.jpg" alt="Vida Bela"/>
@@ -145,6 +164,9 @@
 
 
                 </div><!-- /container -->
+                <script src="js/TweenLite.min.js"></script>
+                <script src="js/EasePack.min.js"></script>
+                <script src="js/rAF.js"></script>
 
                 <script src="js/classie.js"></script>                
                 <script src="js/pathLoader.js"></script>
