@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,700italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
 @font-face {
         font-weight: normal;
         font-style: normal;
@@ -18,8 +20,13 @@ body {
         color: #fffce1;
         font-weight: 400;
         font-size: 1em;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Lato', sans-serif;
         background: black;
+}
+
+h1, h2, h3, h4, h5, strong, b
+{
+        font-family: 'Ubuntu', sans-serif;
 }
 
 a {
@@ -235,45 +242,38 @@ section {
         transition: transform 0.5s, opacity 0.5s;
 }
 
-.open-description-button {
+.caption {
         border: medium none;
         flex: 0 0 auto;
-        padding: 10px;
+        padding: 1em;
         margin: 0;
         text-align: center;
         background: black;
-        color: white;
         text-align: center;
         display: block;
-        color: white;
         position: absolute;
         opacity: 0.7;
         right: 0;
+        left: 0;
+        bottom :-100px;
         border: 0;
-        -webkit-transform: translate3d(0, -50%, 0);
-        transform: translate3d(0, -100%, 0);
-        -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-        transition: transform 0.5s, opacity 0.5s;
+        height: 100px;
+        padding: 1em 0.1em;
+        color: #dbdbdb;
+        font-size: 0.85em;
+        line-height: 1;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+        transition: transform 0.3s, opacity 0.3s;
 }
 
-.open-description-button .icon--grid
+.caption strong
 {
-        transform:rotate(45deg);
-        transform-origin: 50% 50% 0;
-        -ms-transform:rotate(45deg);
-        -ms-transform-origin:50% 50% 0;
-        -webkit-transform:rotate(45deg);
-        -webkit-transform-origin:50% 50% 0;
+    font-size: 0.8em;
 }
 
-.open-description-button:hover .icon--grid
+.caption strong
 {
-        transform:rotate(0deg);
-        transform-origin:50% 50% 0;
-        -ms-transform:rotate(0deg);
-        -ms-transform-origin:50% 50% 0;
-        -webkit-transform:rotate(0deg);
-        -webkit-transform-origin:50% 50% 0;
+    font-size: 1em;
 }
 
 .item:hover .item__image {
@@ -282,10 +282,10 @@ section {
         transform: translate3d(0, -50%, 0);
 }
 
-.item:hover .open-description-button {
+.item:hover .caption {
         opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, -88px, 0);
+        transform: translate3d(0, -88px, 0);
 }
 
 .item__title {
@@ -490,6 +490,7 @@ body,
 }
 
 .icon-list a {
+        font-family: 'Ubuntu', sans-serif;
         display: inline-block;
         padding: 0.8em;
 }
