@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,700italic,400italic);
+/*@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,700italic,400italic);*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:700);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 @font-face {
@@ -26,7 +27,8 @@ body {
 
 h1, h2, h3, h4, h5, strong, b
 {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'PT Sans', sans-serif;
+        /*font-family: 'Ubuntu', sans-serif;*/
 }
 
 a {
@@ -268,12 +270,12 @@ section {
 
 .caption strong
 {
-    font-size: 0.8em;
+        font-size: 0.8em;
 }
 
 .caption strong
 {
-    font-size: 1em;
+        font-size: 1em;
 }
 
 .item:hover .item__image {
@@ -490,7 +492,8 @@ body,
 }
 
 .icon-list a {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'PT Sans', sans-serif;
+        /*font-family: 'Ubuntu', sans-serif;*/
         display: inline-block;
         padding: 0.8em;
 }
@@ -502,7 +505,7 @@ body,
 .icon-list a span {
         display: inline-block;
         margin-left: 10px;
-        font-size: 0.75em;
+        font-size: 0.85em;
         vertical-align: middle;
         font-weight: 700;
         letter-spacing: 1px;
@@ -570,6 +573,16 @@ body,
         transition-delay: 0.25s;
 }
 
+.show-menu .icon-list a:nth-child(7) {
+        -webkit-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+}
+
+.show-menu .icon-list a:nth-child(8) {
+        -webkit-transition-delay: 0.35s;
+        transition-delay: 0.35s;
+}
+
 .show-menu .close-button {
         -webkit-transition-delay: 0.3s;
         transition-delay: 0.3s;
@@ -578,4 +591,50 @@ body,
 .show-menu .content::before {
         -webkit-transition: opacity 0.4s;
         transition: opacity 0.4s;
+}
+
+
+
+
+#comments .inner,
+#about .inner
+{
+        width: 100%;
+        padding: 2em 0em 1em 1em;
+        text-align: center;
+}
+#comments .inner
+{
+        text-align: center;
+}
+
+#comments blockquote{
+        display: inline-block;
+        font-family: 'PT Sans', sans-serif;
+        border-left: 10px solid #FFD640;
+        padding: 0.5em 10px;
+        quotes: "\201C""\201D""\2018""\2019";
+}
+#comments blockquote:before {
+        color: #FFD640;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+}
+#comments blockquote p {
+        display: inline;
+        color: #FFD640;
+}
+
+
+#about h2
+{
+        color: white;
+}
+
+#about h2 span
+{
+        color: #FFD640;
 }
