@@ -32,13 +32,19 @@ h1, h2, h3, h4, h5, strong, b
 }
 
 a {
-        color: #4e4a46;
+        color: #FFD640;
         text-decoration: none;
         outline: none;
 }
 
+a:hover
+{
+        /*color: #ffcb0f;*/
+        color: #FFD640;
+        border-bottom: 1px dotted #FFD640;
+}
+
 a:hover, a:focus {
-        color: #c94e50;
         outline: none;
 }
 
@@ -255,11 +261,11 @@ section {
         display: block;
         position: absolute;
         opacity: 0.7;
-        right: 0;
+        right: -1px;
         left: 0;
-        bottom :-100px;
+        bottom :-115px;
         border: 0;
-        height: 100px;
+        height: 115px;
         padding: 1em 0.1em;
         color: #dbdbdb;
         font-size: 0.85em;
@@ -286,8 +292,8 @@ section {
 
 .item:hover .caption {
         opacity: 1;
-        -webkit-transform: translate3d(0, -88px, 0);
-        transform: translate3d(0, -88px, 0);
+        -webkit-transform: translate3d(0, -115px, 0);
+        transform: translate3d(0, -115px, 0);
 }
 
 .item__title {
@@ -362,6 +368,7 @@ body,
 .menu-wrap a:hover,
 .menu-wrap a:focus {
         color: #FFD640;
+        border: none;
 }
 
 .content-wrap {
@@ -596,26 +603,27 @@ body,
 
 
 
-#comments .inner,
 #about .inner
 {
         width: 100%;
-        padding: 2em 0em 1em 1em;
+        padding: 1em 0em 1em 1em;
         text-align: center;
 }
 #comments .inner
 {
+        padding: 2em 0em 1em 1em;
+        width: 100%;
         text-align: center;
 }
 
-#comments blockquote{
+#comments .blockquote-wrapper blockquote{
         display: inline-block;
         font-family: 'PT Sans', sans-serif;
         border-left: 10px solid #FFD640;
         padding: 0.5em 10px;
-        quotes: "\201C""\201D""\2018""\2019";
+        quotes: "\201C""\201D";
 }
-#comments blockquote:before {
+#comments .blockquote-wrapper blockquote:before {
         color: #FFD640;
         content: open-quote;
         font-size: 4em;
@@ -623,8 +631,18 @@ body,
         margin-right: 0.25em;
         vertical-align: -0.4em;
 }
-#comments blockquote p {
+#comments .blockquote-wrapper blockquote p {
         display: inline;
+        color: #FFD640;
+}
+#comments .blockquote-wrapper blockquote p.head {
+        margin-right: 0.25em;
+        display: block;
+        clear:both;
+        text-align: right;
+        color: #FFD640;
+}
+#comments .blockquote-wrapper blockquote p.head a {
         color: #FFD640;
 }
 
@@ -637,4 +655,49 @@ body,
 #about h2 span
 {
         color: #FFD640;
+}
+
+.skills-itens
+{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+}
+
+
+.skills-itens li
+{
+        background: black;
+        list-style: none;
+        border: 1px solid #FFD640;
+        color: #fff;
+        display: inline-block;
+        margin: 5px;
+        padding: 6px 10px;
+}
+
+#skills
+{
+        padding-top: 1em;
+}
+#applications
+{
+        padding-bottom: 4em;
+        
+}
+
+#developed
+{
+        background: black;
+        display: black;
+        padding: 0.5em 0em;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+}
+
+#developed i
+{
+        margin: 0px 5px;
 }
