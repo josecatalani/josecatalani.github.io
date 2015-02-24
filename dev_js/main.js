@@ -1,5 +1,22 @@
 (function() {
-
+        var isMobile =
+                {
+                        Android: function() {
+                                return navigator.userAgent.match(/Android/i) ? true : false;
+                        },
+                        BlackBerry: function() {
+                                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+                        },
+                        iOS: function() {
+                                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+                        },
+                        Windows: function() {
+                                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+                        },
+                        any: function() {
+                                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+                        }
+                };
         var bodyEl = document.body,
                 content = document.querySelector('.content-wrap'),
                 openbtn = document.getElementById('open-button'),
@@ -17,9 +34,12 @@
                 window.addEventListener('scroll', noscroll);
 
                 initEvents();
-                initHeader();
-                initAnimation();
-                addListeners();
+                /*if(!isMobile.any())
+                {
+                        initHeader();
+                        initAnimation();
+                        addListeners();
+                }*/
         }
 
         function initEvents() {
@@ -61,10 +81,10 @@
                                 });
                                 document.getElementById(attr).style.display = "flex";
                         }
-                        else{
-                        classie.remove(containerInternal, 'container--open');
-                        classie.remove(document.getElementById('trigger'), 'trigger--active');
-                        window.addEventListener('scroll', noscroll);
+                        else {
+                                classie.remove(containerInternal, 'container--open');
+                                classie.remove(document.getElementById('trigger'), 'trigger--active');
+                                window.addEventListener('scroll', noscroll);
                         }
                 }
                 else {
@@ -88,8 +108,12 @@
         // disable scrolling
         window.addEventListener('scroll', noscroll);
 
-        trigger.addEventListener('click', function(){toggleContent("projects");}, false);
-        document.getElementById('trigger').addEventListener('click', function(){toggleContent()}, false);
+        trigger.addEventListener('click', function() {
+                toggleContent("projects");
+        }, false);
+        document.getElementById('trigger').addEventListener('click', function() {
+                toggleContent()
+        }, false);
         document.getElementById('about-menu').addEventListener('click', function() {
                 toggleContent("about");
         }, false);

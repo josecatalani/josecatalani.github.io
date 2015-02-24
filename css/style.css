@@ -37,7 +37,7 @@ a {
         outline: none;
 }
 
-a:hover
+a.dotted:hover
 {
         /*color: #ffcb0f;*/
         color: #FFD640;
@@ -94,6 +94,15 @@ section {
 .container--open .intro {
         -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 250px, 0);
         transform: translate3d(0, -100%, 0) translate3d(0, 250px, 0);
+}
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+        .container--open .intro {
+                -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 70px, 0);
+                transform: translate3d(0, -100%, 0) translate3d(0, 70px, 0);
+        }
 }
 
 /* Fullscreen image */
@@ -170,7 +179,7 @@ section {
 
 .icon rect,
 .icon line {
-        stroke: #ffffff;
+        stroke: #b8b7ad;
         fill: none;
         stroke-width: 2px;
 }
@@ -206,6 +215,15 @@ section {
         padding: 250px 5px 0;
 }
 
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+        .items-wrap {
+                padding: 50px 5px 0;
+        }
+}
+
+
 .items-wrap::after {
         position: absolute;
         top: 0;
@@ -237,6 +255,7 @@ section {
         border-width: 0 5px 10px;
         background: #2a2e39;
 }
+
 
 .item__image {
         position: absolute;
@@ -400,7 +419,7 @@ body,
 .menu-button {
         position: fixed;
         bottom: 0;
-        z-index: 1000;
+        z-index: 99999;
         margin: 1em;
         padding: 0;
         width: 2.5em;
@@ -418,7 +437,7 @@ body,
         right: 0.5em;
         bottom: 0.5em;
         left: 0.5em;
-        background: linear-gradient(#ffffff 20%, transparent 20%, transparent 40%, #ffffff 40%, #ffffff 60%, transparent 60%, transparent 80%, #ffffff 80%);
+        background: linear-gradient(#b8b7ad 20%, transparent 20%, transparent 40%, #b8b7ad 40%, #b8b7ad 60%, transparent 60%, transparent 80%, #b8b7ad 80%);
         content: '';
 }
 
@@ -497,7 +516,6 @@ body,
         -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
         transition: opacity 0.4s, transform 0.4s;
 }
-
 .icon-list a {
         font-family: 'PT Sans', sans-serif;
         /*font-family: 'Ubuntu', sans-serif;*/
@@ -505,6 +523,25 @@ body,
         padding: 0.8em;
 }
 
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+        
+        .icon-list a {
+                display: block;
+        }
+        
+        .menu-divider
+        {
+                visibility: hidden !important;
+        }
+
+        .menu-wrap {
+                height: 100%;
+                -webkit-transform: translate3d(0,100%,0);
+                transform: translate3d(0,100%,0);
+        }
+}
 .icon-list a i {
         vertical-align: middle;
 }
@@ -682,7 +719,7 @@ body,
 #applications
 {
         padding-bottom: 4em;
-        
+
 }
 
 #developed
