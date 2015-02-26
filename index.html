@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="pt_BR" class="no-js">
         <head>
                 <meta charset="UTF-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
                 <meta name="viewport" content="width=device-width, initial-scale=1"> 
                 <title>josé catalani | desenvolvedor web</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="site abc, abc, sites no abc, grande abc, site" />
+                <meta name="description" content="Criação de Sites no ABC, São Bernardo do Campo e Além !" />
+                <meta name="keywords" content="site abc, abc, sites no abc, grande abc, site, site em sao bernardo do campo" />
                 <meta name="author" content="José Catalani" />
+
+                <!-- Facebook Tags -->
+                <meta property="og:title" content="José Catalani" />
+                <meta property="og:locale" content="pt_BR">
+                <meta property="og:description" content="Criação de Sites no ABC, São Bernardo do Campo e Além !" />
+                <meta property="og:type" content="company" />
+                <meta property="og:url" content="http://www.josecatalani.com/" />
+                <meta property="og:image" content="http://www.josecatalani.com/img/facebook_tags.jpg" />
+                <meta property="og:image:type" content="image/jpeg">
+                <meta property="og:image:width" content="1062">
+                <meta property="og:image:height" content="589"> 
+                <meta property="og:site_name" content="José Catalani"/>
+                <meta property="og:page_id" content="364403163760666"/>
+
                 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
                 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
                 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
@@ -33,8 +47,8 @@
                 <link rel="stylesheet" type="text/css" href="css/normalize.css" />
                 <link rel="stylesheet" type="text/css" href="css/style.css" />
                 <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-                <script src="dev_js/snap.svg-min.js"></script>
-                <script src="dev_js/modernizr.custom.js"></script>
+                <script src="js/snap.svg-min.js"></script>
+                <script src="js/modernizr.custom.js"></script>
                 <!--[if IE]>
                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
                 <![endif]-->
@@ -49,9 +63,8 @@
                                                 <a id="projects-menu" href="#"><i class="fa fa-fw fa-desktop"></i><span>Projetos</span></a>
                                                 <a id="contact-menu" href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Contato</span></a>
                                                 <a id="comments-menu" href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comentários</span></a>
-                                                <a href="#" class="menu-divider"> | </a>
-                                                <a href="https://www.github.com/josecatalani" target="_blank"><i class="fa fa-github-alt"></i><span>josecatalani</span></a>
-                                                <a href="https://www.twitter.com/josecatalani" target="_blank"><i class="fa fa-github-alt"></i><span>josecatalani</span></a>
+                                                <!--<a href="#" class="menu-divider"> | </a>
+                                                <a href="https://www.github.com/josecatalani" target="_blank"><i class="fa fa-github-alt"></i><span>josecatalani</span></a>-->
                                         </div>
                                 </nav>
                                 <button class="close-button" id="close-button">Close Menu</button>
@@ -85,7 +98,7 @@
                                                                 </div><!-- /intro__content -->
                                                         </header><!-- /intro -->
 
-                                                        <section id="about" class="items-wrap">
+                                                        <section id="about" class="items-wrap scrollbar">
                                                                 <div class="inner">
                                                                         <h2>Ol&aacute;, <span>Meu nome &eacute; Jos&eacute; Victor</span></h2>
                                                                         <p>Sou Desenvolvedor Web de São Paulo - Brasil</p>
@@ -129,6 +142,16 @@
                                                                                         <li>Filezilla</li>
                                                                                 </ul>
                                                                         </div>
+                                                                        <div id="socials" class="skills-itens">
+                                                                                <ul>
+                                                                                        <li><a href="http://www.facebook.com/josecatalani" target="_blank"><i class="fa fa-facebook"></i>facebook</a></li>
+                                                                                        <li><a href="http://www.twitter.com/josecatalani" target="_blank"><i class="fa fa-twitter"></i>twitter</a></li>
+                                                                                        <li><a href="https://www.linkedin.com/pub/jos%C3%A9-victor-d-ambr%C3%B3sio-catalani/32/78a/33" target="_blank"><i class="fa fa-linkedin"></i>linkedin</a></li>
+                                                                                        <li><a href="http://stackoverflow.com/users/2460784/josecatalani" target="_blank"><i class="fa fa-stack-overflow"></i>stack overflow</a></li>
+                                                                                        <li><a href="https://bitbucket.org/josecatalani" target="_blank"><i class="fa fa-bitbucket"></i>bitbucket</a></li>
+                                                                                        <li><a href="https://github.com/josecatalani" target="_blank"><i class="fa fa-github-alt"></i>github</a></li>
+                                                                                </ul>
+                                                                        </div>
 
                                                                         <footer id="developed">
                                                                                 <p>Desenvolvido por José Catalani, feito com <i class="fa fa-coffee"></i> e <i class="fa fa-heart"></i></p>
@@ -139,7 +162,8 @@
 
                                                         <section id="contact" class="items-wrap">
                                                                 <div class="inner">
-                                                                        <p>Entre em contato, preencha o <a href="" title="Formulário de Escopo" target="_blank" class="dotted">formulário de escopo</a></a></p>
+                                                                        <p>Entre em contato, preencha o <a href="http://goo.gl/forms/SQjFLaeO9r" title="Formulário de Contato" target="_blank" class="dotted">formulário de contato</a> para dúvidas, críticas, sugestões entre outros.</p>
+                                                                        <p>Para orçamento, <a href="http://goo.gl/forms/qYIsz13944" title="Formulário de Escopo" target="_blank" class="dotted">formulário de escopo</a> para agilizar e entender melhor o seu projeto.</p>
                                                                 </div>
                                                         </section>
 
@@ -155,13 +179,32 @@
                                                         </section>
 
                                                         <section id="projects" class="items-wrap">
-                                                                <a href="http://www.vida-bela.com" alt="Vida Bela" class="item" target="_blank">
+                                                                <a href="http://www.h2h.com.br" title="Home2Home" class="item" target="_blank">
+                                                                        <img class="item__image" src="img/projetos/h2h_thumb.jpg" alt="Home2Home"/>
+                                                                        <h2 class="item__title">Home2Home</h2>
+                                                                        <div class="caption">
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript, PHP</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend, manutenção</p>
+                                                                                <p><strong>Equipe:</strong> Tinpix Digital</p>
+                                                                        </div>
+                                                                </a>
+
+                                                                <a href="http://www.maximamodas.com.br" title="Máxima Modas" class="item" target="_blank">
+                                                                        <img class="item__image" src="img/projetos/maxima_thumb.jpg" alt="Máxima Modas"/>
+                                                                        <h2 class="item__title">Máxima Modas</h2>
+                                                                        <div class="caption">
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript, PHP, CMS, CodeIgniter</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend e backend, manutenção</p>
+                                                                                <p><strong>Equipe:</strong> José Catalani</p>
+                                                                        </div>
+                                                                </a>
+                                                                <a href="http://www.vida-bela.com" title="Vida Bela" class="item" target="_blank">
                                                                         <img class="item__image" src="img/projetos/vidabela_thumb.jpg" alt="Vida Bela"/>
                                                                         <h2 class="item__title">Vida Bela</h2>
                                                                         <div class="caption">
                                                                                 <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript</p>
                                                                                 <p><strong>Habilidade:</strong> desenvolvimento frontend, manutenção</p>
-                                                                                <p><strong>Equipe:</strong> desenvolvimento frontend</p>
+                                                                                <p><strong>Equipe:</strong> Tinpix Digital</p>
                                                                         </div>
                                                                 </a>
                                                                 <a href="http://www.bobo.com.br" title="Bo.Bô" class="item" target="_blank">
@@ -169,7 +212,7 @@
                                                                         <h2 class="item__title">Bo.Bô</h2>
                                                                         <div class="caption">
                                                                                 <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript</p>
-                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend, manutenção de coleções</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend, manutenção</p>
                                                                                 <p><strong>Equipe: </strong>Tinpix Digital</p>
                                                                         </div>
                                                                 </a>
@@ -218,6 +261,70 @@
                                                                                 <p><strong>Equipe: </strong>Tinpix Digital</p>
                                                                         </div>
                                                                 </a>
+                                                                <a href="http://www.squarefoot.com.br/" class="item" target="_blank" title="Lina Miranda">
+                                                                        <img class="item__image" src="img/projetos/lina_thumb.jpg" alt="Lina Miranda"/>
+                                                                        <h2 class="item__title">Lina Miranda</h2>
+                                                                        <div class="caption">
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript, PHP, XML</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend e backend</p>
+                                                                                <p><strong>Equipe: </strong>Tinpix Digital</p>
+                                                                        </div>
+                                                                </a>
+                                                                <a href="http://www.ciavintage.com.br/" class="item" target="_blank" title="Cia Vintage">
+                                                                        <img class="item__image" src="img/projetos/cia_thumb.jpg" alt="Cia Vintage"/>
+                                                                        <h2 class="item__title">Cia Vintage</h2>
+                                                                        <div class="caption">
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript, PHP, XML</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend e backend</p>
+                                                                                <p><strong>Equipe: </strong>Tinpix Digital</p>
+                                                                        </div>
+                                                                </a>
+                                                                <a href="http://www.2maiscapital.com.br/" class="item" target="_blank" title="2+Capital">
+                                                                        <img class="item__image" src="img/projetos/2mais_thumb.jpg" alt="2+Capital"/>
+                                                                        <h2 class="item__title">2+Capital</h2>
+                                                                        <div class="caption">
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript, Wordpress</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend</p>
+                                                                                <p><strong>Equipe: </strong>Tinpix Digital</p>
+                                                                        </div>
+                                                                </a>
+
+                                                                <a href="http://www.helenaaugusta.com.br/" class="item" target="_blank" title="Helena Augusta">
+                                                                        <img class="item__image" src="img/projetos/helena_thumb.jpg" alt="Helena Augusta"/>
+                                                                        <h2 class="item__title">Helena Augusta</h2>
+                                                                        <div class="caption">
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript, PHP, XML</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend e backend</p>
+                                                                                <p><strong>Equipe: </strong>Tinpix Digital</p>
+                                                                        </div>
+                                                                </a>
+                                                                <a href="http://www.guilhermetorres.com.br/" class="item" target="_blank" title="Guilherme Torres">
+                                                                        <img class="item__image" src="img/projetos/gt_thumb.jpg" alt="Guilherme Torres"/>
+                                                                        <h2 class="item__title">Guilherme Torres</h2>
+                                                                        <div class="caption">
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript, PHP, XML</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend e backend</p>
+                                                                                <p><strong>Equipe: </strong>Tinpix Digital</p>
+                                                                        </div>
+                                                                </a>
+                                                                <a href="http://www.nininhasigrist.com.br/" class="item" target="_blank" title="Nininha Sigrist">
+                                                                        <img class="item__image" src="img/projetos/nininha_thumb.jpg" alt="Nininha Sigrist"/>
+                                                                        <h2 class="item__title">Nininha Sigrist</h2>
+                                                                        <div class="caption">
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript, PHP, XML</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend e backend</p>
+                                                                                <p><strong>Equipe: </strong>Tinpix Digital</p>
+                                                                        </div>
+                                                                </a>
+                                                                <a href="http://www.standpress.com.br/" class="item" target="_blank" title="Standpress">
+                                                                        <img class="item__image" src="img/projetos/standpress_thumb.jpg" alt="Standpress"/>
+                                                                        <h2 class="item__title">Standpress</h2>
+                                                                        <div class="caption">
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript, PHP, XML</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend e backend</p>
+                                                                                <p><strong>Equipe: </strong>Tinpix Digital</p>
+                                                                        </div>
+                                                                </a>
                                                                 <a href="http://www.lindademorrer.com.br/" class="item" target="_blank" title="Linda de Morrer">
                                                                         <img class="item__image" src="img/projetos/lindademorrer_thumb.jpg" alt="Linda de Morrer"/>
                                                                         <h2 class="item__title">Linda de Morrer</h2>
@@ -251,7 +358,7 @@
                                                                         <div class="caption">
                                                                                 <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript</p>
                                                                                 <p><strong>Habilidade:</strong> desenvolvimento frontend</p>
-                                                                                <p><strong>Equipe: </strong>Tinpix Digital</p>
+                                                                                <p><strong>Equipe: </strong>José Catalani</p>
                                                                         </div>
                                                                 </a>
                                                                 <a href="http://fernandalorenzoni.com/" class="item" target="_blank" title="Fernanda Lorenzoni">
@@ -303,8 +410,8 @@
                                                                         <img class="item__image" src="img/projetos/closetdamari_thumb.jpg" alt="Closet da Mari"/>
                                                                         <h2 class="item__title">Closet da Mari</h2>
                                                                         <div class="caption">
-                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript</p>
-                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend, wordpress</p>
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript, Wordpress</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend</p>
                                                                                 <p><strong>Equipe: </strong>Tinpix Digital</p>
                                                                         </div>
                                                                 </a>
@@ -317,6 +424,15 @@
                                                                                 <p><strong>Equipe: </strong>Tinpix Digital</p>
                                                                         </div>
                                                                 </a>
+                                                                <!--<a href="http://www.marinasparkhotel.com.br" title="Marinas Park Hotel" class="item" target="_blank">
+                                                                        <img class="item__image" src="img/projetos/marinas_thumb.jpg" alt="Marinas Park Hotel"/>
+                                                                        <h2 class="item__title">Marinas Park Hotel</h2>
+                                                                        <div class="caption">
+                                                                                <p><strong>Tecnologia:</strong> HTML5, CSS3, JavaScript</p>
+                                                                                <p><strong>Habilidade:</strong> desenvolvimento frontend</p>
+                                                                                <p><strong>Equipe: </strong>Sites Midia</p>
+                                                                        </div>
+                                                                </a>-->
                                                         </section>
                                                 </div>
                                         </div>
@@ -325,12 +441,22 @@
 
                 </div><!-- /container -->
 
-                <script src="dev_js/TweenLite.min.js"></script>
-                <script src="dev_js/EasePack.min.js"></script>
-                <script src="dev_js/rAF.js"></script>
+                <script src="js/TweenLite.min.js"></script>
+                <script src="js/EasePack.min.js"></script>
+                <script src="js/rAF.js"></script>
 
-                <script src="dev_js/classie.js"></script>                
-                <script src="dev_js/pathLoader.js"></script>
-                <script src="dev_js/main.js"></script>
+                <script src="js/classie.js"></script>                
+                <script src="js/pathLoader.js"></script>
+                <script src="js/main.js"></script>
+                <script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-43859634-1', 'auto');
+                  ga('send', 'pageview');
+
+                </script>
         </body>
 </html>

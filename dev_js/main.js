@@ -28,6 +28,7 @@
 
         var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
 
+
         function init() {
 
                 // disable scrolling
