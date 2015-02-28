@@ -1,0 +1,22 @@
+{
+"manifest_version": 2,
+"name": "José Catalani",
+"description": "Criação de Sites no ABC e Além !",
+"version": "1.0",
+"icons": { "16": "icons/16.png",
+           "48": "icons/48.png",
+          "128": "icons/128.png" },
+"app": {
+"urls": [
+"http://www.josecatalani.com/"
+
+],
+"launch": {
+"web_url": "http://www.josecatalani.com"
+}
+},
+"permissions": [
+"unlimitedStorage",
+"notifications"
+]
+}

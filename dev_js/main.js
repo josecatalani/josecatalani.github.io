@@ -55,7 +55,85 @@
                         if (isOpen && target !== openbtn) {
                                 toggleMenu();
                         }
+
+                        return false;
                 });
+
+                /* Google Analitycs */
+                var openMenuGA = document.getElementById('open-button');
+                openMenuGA.addEventListener('click', function() {
+                  ga('send', 'event', 'menu', 'open');
+                            return false;
+                });
+
+                var closeMenuGA = document.getElementById('close-button');
+                closeMenuGA.addEventListener('click', function() {
+                  ga('send', 'event', 'menu', 'close');
+                            return false;
+                });
+
+                var contactFormGA = document.getElementById('contact-form-link');
+                contactFormGA.addEventListener('click', function() {
+                  ga('send', 'event', 'contact', 'send', 'form');
+                            return false;
+                });
+
+                var briefingFormGA = document.getElementById('briefing-form-link');
+                briefingFormGA.addEventListener('click', function() {
+                  ga('send', 'event', 'contact', 'send', 'briefing');
+                            return false;
+                });
+
+                var tinpixGA = document.getElementById('about-tinpix');
+                tinpixGA.addEventListener('click', function() {
+                  ga('send', 'event', 'about', 'click', 'tinpix');
+                            return false;
+                });
+
+                var umespGA = document.getElementById('about-tinpix');
+                umespGA.addEventListener('click', function() {
+                  ga('send', 'event', 'about', 'click', 'UMESP');
+                            return false;
+                });
+
+                var triggerGA = document.getElementById('trigger');
+                triggerGA.addEventListener('click', function() {
+                  ga('send', 'event', 'button', 'click', 'close-content');
+                            return false;
+                });
+
+                
+
+                /* menu Click */
+                [].slice.call(document.querySelectorAll('.icon-list a')).forEach(function(el) {
+                        
+                        el.addEventListener("click", function(){
+                            var _id = this.id;
+                            ga('send', 'event', 'menu', 'click', _id);
+                            return false;
+
+                        })
+                });
+
+                /* menu Click */
+                [].slice.call(document.querySelectorAll('.item')).forEach(function(el) {
+                        el.addEventListener("click", function(){
+                            var _title = this.title;
+                            ga('send', 'event', 'project', 'click', _title);
+                            return false;
+                        });
+                });
+
+                /* menu Click */
+                [].slice.call(document.querySelectorAll('#socials a')).forEach(function(el) {
+                        el.addEventListener("click", function(){
+                            var _title = this.title;
+                            ga('send', 'event', 'socials', 'click', _title);
+                            return false;
+                        });
+                });
+
+
         }
 
         function toggleMenu() {
@@ -101,6 +179,7 @@
                         window.removeEventListener('scroll', noscroll);
                 }
                 toggleMenu();
+
         }
 
         // reset scrolling position
@@ -111,18 +190,23 @@
 
         trigger.addEventListener('click', function() {
                 toggleContent("projects");
+                return false;
         }, false);
         document.getElementById('trigger').addEventListener('click', function() {
-                toggleContent()
+                toggleContent();
+                return false;
         }, false);
         document.getElementById('about-menu').addEventListener('click', function() {
                 toggleContent("about");
+                return false;
         }, false);
         document.getElementById('contact-menu').addEventListener('click', function() {
                 toggleContent("contact");
+                return false;
         }, false);
         document.getElementById('comments-menu').addEventListener('click', function() {
                 toggleContent("comments");
+                return false;
         }, false);
 
         // For Demo purposes only (prevent jump on click)
