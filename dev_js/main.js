@@ -21,7 +21,7 @@
                 content = document.querySelector('.content-wrap'),
                 openbtn = document.getElementById('open-button'),
                 closebtn = document.getElementById('close-button'),
-                isOpen = false;
+                isOpen = true;
 
         var containerInternal = document.getElementById('intro-container'),
                 trigger = document.getElementById('projects-menu');
@@ -157,6 +157,7 @@
                         {
                                 [].slice.call(document.querySelectorAll('.items-wrap')).forEach(function(el) {
                                         el.style.display = "none";
+                                        el.scrollTop = 0;
                                 });
                                 document.getElementById(attr).style.display = "flex";
                         }
