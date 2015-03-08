@@ -35,6 +35,11 @@ a {
         color: #FFD640;
         text-decoration: none;
         outline: none;
+        &.black
+        {
+        color: black;
+        
+        }
 }
 
 a.dotted:hover
@@ -42,6 +47,12 @@ a.dotted:hover
         /*color: #ffcb0f;*/
         color: #FFD640;
         border-bottom: 1px dotted #FFD640;
+        &.black
+        {
+        color: black;
+        border-bottom: 1px dotted black;
+        
+        }
 }
 
 a:hover, a:focus {
@@ -759,4 +770,43 @@ and (max-width : 480px) {
         padding: 2em 0em 1em 1em;
         width: 100%;
         text-align: center;
+}
+
+body.benefits, body.benefits .container
+{
+        overflow: auto !important;
+}
+
+#benefits
+{
+        background: white url('../img/background.jpg') center center no-repeat;
+
+        .inner
+        {
+                padding: 3em 4em 210px 4em;
+                color: black;
+        }
+
+
+        ul
+        {
+                li
+                {
+                        list-style: none;
+                        padding: 1em 1em;
+                        position: relative;
+
+                        i
+                        {
+                                width: 50px;
+                                text-align: center;
+                                left: -40px;
+                                position: absolute;
+                                height: 30px;
+                                top: 50%;
+                                margin-top: -15px;
+                        }
+                }
+        }
+
 }
