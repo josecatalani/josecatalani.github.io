@@ -15,7 +15,8 @@ module.exports = function( grunt ) {
                         my_target : {
                                 files : 
                                 {
-                                        'js/main.js' : [ 'dev_js/main.js' ]
+                                        'js/main.js' : [ 'dev_js/main.js' ],
+                                        'js/benefits.js' : [ 'dev_js/benefits.js' ]
                                 }
                         }
                 },
@@ -31,5 +32,5 @@ module.exports = function( grunt ) {
 
         grunt.loadNpmTasks( 'grunt-contrib-uglify' );
         grunt.loadNpmTasks( 'grunt-contrib-sass' );
-        grunt.registerTask( 'default', [ 'sass' ] );
+        grunt.registerTask( 'default', [ 'sass', 'uglify' ] );
 };
