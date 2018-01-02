@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>José Catalani</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://use.typekit.net/fhv3lft.css">
+        
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body class="is-project">
+<div id="wrapper">
+    <div id="container">
+        <nav id="main-nav">
+    <ul>
+        <li>
+            <a href="/" title="home">home</a>
+        </li>
+        <li>
+            <a href="/blog" title="blog" class="">blog</a>
+        </li>
+        <li>
+            <a href="/projects" title="projetos" class="current">projetos</a>
+        </li>
+        <li>
+            <a href="/me" title="me" class="">me</a>
+        </li>
+    </ul>
+</nav>
+
+<section id="project-details">
+    <header>
+        <h1>Helena Augusta<small>2014</small></h1>
+        <p>Site</p>
+        <p><a href="http://www.helenaaugusta.com.br" title="Helena Augusta" target="_blank" class="visit-site">ver site</a></p>
+    </header>
+    <article>
+        
+    </article>
+</section>
+
+
+    </div>
+</div>
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
