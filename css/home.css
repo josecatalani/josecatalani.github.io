@@ -1,0 +1,55 @@
+#home .head {
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+}
+#home .head a {
+  color: bgColor;
+  border-bottom: 2px dotted bgColor;
+  text-decoration: none;
+  font-weight: bold;
+}
+#home .head a:hover {
+  color: highlight;
+  border-bottom: 3px dotted highlight;
+}
+#home #posts {
+  padding-top: 50px;
+  max-width: 660px;
+  margin: 0 auto;
+}
+#home #posts ul {
+  padding: 0;
+}
+#home #posts ul li {
+  margin-top: 15px;
+  display: block;
+  padding: 0;
+}
+#home #posts ul li:first-child {
+  margin-top: 0;
+}
+#home #posts ul li a,
+#home #posts ul li p {
+  margin: 0;
+}
+#home #posts ul li a.blog-title,
+#home #posts ul li p.blog-title {
+  font-size: 19px;
+  float: left;
+  font-weight: 600;
+}
+#home #posts ul li a.blog-date,
+#home #posts ul li p.blog-date {
+  font-weight: 100;
+  font-size: 13px;
+  clear: both;
+  text-transform: uppercase;
+}
+#home #posts ul li a.blog-tags,
+#home #posts ul li p.blog-tags {
+  float: right;
+  display: inline-block;
+  font-size: 12px;
+  font-style: italic;
+}

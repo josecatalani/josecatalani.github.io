@@ -1,0 +1,103 @@
+#projects-list ul {
+  padding: 0;
+  margin: 0;
+}
+#projects-list ul li {
+  display: block;
+  margin: 0;
+  max-width: 18%;
+  float: left;
+  margin: 2em;
+}
+#projects-list ul li img {
+  max-width: 100%;
+  display: block;
+}
+#projects-list ul li p {
+  margin: 0;
+}
+#projects-list ul li .project-image {
+  background: highlight;
+}
+#projects-list ul li .project-description {
+  padding: 1em 0px;
+}
+#projects-list ul li .project-title {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1.3em;
+}
+#projects-list ul li .project-year {
+  font-size: 0.9em;
+}
+@media screen and (max-width: 900px) {
+  #projects-list ul li {
+    max-width: 25%;
+    margin: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  #projects-list ul li {
+    max-width: 100%;
+    margin: 1em 0em;
+  }
+}
+@media screen and (min-width: 900px) {
+  #projects-list ul li .project-image {
+    min-width: 185px;
+    min-height: 185px;
+    background: highlight;
+  }
+}
+#project-details {
+  background: bgColor;
+  min-width: 420px;
+  max-width: 50%;
+  max-height: 50%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 2em;
+}
+@media screen and (max-width: 500px) {
+  #project-details {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+#project-details p {
+  color: #fff;
+  margin: 0;
+}
+#project-details header h1 {
+  margin: 0;
+  color: #fff;
+  vertical-align: middle;
+}
+#project-details header h1 small {
+  font-size: 0.6em;
+  float: right;
+}
+#project-details a {
+  color: #fff;
+}
+#project-details a.visit-site {
+  margin-top: 15px;
+  display: inline-block;
+}
+.full-image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
