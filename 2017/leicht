@@ -32,9 +32,9 @@
 
 <section id="project-details">
     <header>
-        <h1>Standpress<small>2014</small></h1>
+        <h1>Leicht<small>2014</small></h1>
         <p>Site</p>
-        <p><a href="http://www.standpress.com.br" title="Standpress" target="_blank" class="visit-site">ver site</a></p>
+        <p><a href="http://www.h2h.com.br" title="Leicht" target="_blank" class="visit-site">ver site</a></p>
     </header>
     <article>
         
@@ -42,7 +42,7 @@
 </section>
 
 
-<section class="full-image willow animated" style="background-image: url('/2017/standpress/standpress_thumb.jpg')"></section>
+<section class="full-image willow animated" style="background-image: url('/2017/leicht/leicht_full.jpg')"></section>
 
 
 

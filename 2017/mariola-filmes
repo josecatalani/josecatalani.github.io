@@ -32,17 +32,18 @@
 
 <section id="project-details">
     <header>
-        <h1>Standpress<small>2014</small></h1>
-        <p>Site</p>
-        <p><a href="http://www.standpress.com.br" title="Standpress" target="_blank" class="visit-site">ver site</a></p>
+        <h1>Mariola Filmes<small>2014</small></h1>
+        <p></p>
+        <p><a href="" title="Mariola Filmes" target="_blank" class="visit-site">ver site</a></p>
     </header>
     <article>
-        
+        <p>Frontend em HTML/CSS3, back-end feito em XML frontend em HTML/CSS3, back-end feito em XML.<br>Frontend em HTML/CSS3, back-end feito em XML frontend em HTML/CSS3, back-end feito em XML.<br>Frontend em HTML/CSS3, back-end feito em XML frontend em HTML/CSS3, back-end feito em XML.<br>Frontend em HTML/CSS3, back-end feito em XML frontend em HTML/CSS3, back-end feito em XML.<br>Frontend em HTML/CSS3, back-end feito em XML frontend em HTML/CSS3, back-end feito em XML.<br>Frontend em HTML/CSS3, back-end feito em XML frontend em HTML/CSS3, back-end feito em XML.<br>Frontend em HTML/CSS3, back-end feito em XML frontend em HTML/CSS3, back-end feito em XML.<br>Frontend em HTML/CSS3, back-end feito em XML frontend em HTML/CSS3, back-end feito em XML.</p>
+
     </article>
 </section>
 
 
-<section class="full-image willow animated" style="background-image: url('/2017/standpress/standpress_thumb.jpg')"></section>
+<section class="full-image willow animated" style="background-image: url('/2017/mariola-filmes/mariola_full.jpg')"></section>
 
 
 
