@@ -43,7 +43,7 @@
 </section>
 
 
-<section class="full-image willow animated" style="background-image: url('/2017/mariola-filmes/mariola_full.jpg')"></section>
+<section class="full-image willow animated" style="background-image: url(/images/mariola-filmes/full.jpg)"></section>
 
 
 

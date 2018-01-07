@@ -42,7 +42,7 @@
 </section>
 
 
-<section class="full-image willow animated" style="background-image: url('/2017/brc-group/brcgroup_full.jpg')"></section>
+<section class="full-image willow animated" style="background-image: url(/images/brc-group/full.jpg)"></section>
 
 
 

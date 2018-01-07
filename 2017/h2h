@@ -42,7 +42,7 @@
 </section>
 
 
-<section class="full-image willow animated" style="background-image: url('/2017/h2h/h2h_thumb.jpg')"></section>
+<section class="full-image willow animated" style="background-image: url(/images/h2h/thumb.jpg)"></section>
 
 
 

@@ -38,13 +38,14 @@
     </header>
     <article>
         
+
     </article>
 </section>
 
 
-<section class="full-image willow animated" style="background-image: url('/2017/bo-bo/bobo_full.jpg')"></section>
+<section class="full-image willow animated" style="background-image: url(/images/bo-bo/full.jpg)"></section>
 
-<section class="full-image willow animated" style="background-image: url('/2017/bo-bo/bobo_full.jpg')"></section>
+<section class="full-image willow animated" style="background-image: url(/images/bo-bo/full.jpg)"></section>
 
 
 

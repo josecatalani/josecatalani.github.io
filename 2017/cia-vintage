@@ -42,7 +42,7 @@
 </section>
 
 
-<section class="full-image willow animated" style="background-image: url('/2017/cia-vintage/cia_thumb.jpg')"></section>
+<section class="full-image willow animated" style="background-image: url(/images/cia-vintage/thumb.jpg)"></section>
 
 
 
