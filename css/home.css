@@ -18,36 +18,36 @@
   max-width: 660px;
   margin: 0 auto;
 }
-#home #posts ul {
+ul.post-list {
   padding: 0;
 }
-#home #posts ul li {
+ul.post-list li {
   margin-top: 15px;
   display: block;
   padding: 0;
 }
-#home #posts ul li:first-child {
+ul.post-list li:first-child {
   margin-top: 0;
 }
-#home #posts ul li a,
-#home #posts ul li p {
+ul.post-list li a,
+ul.post-list li p {
   margin: 0;
 }
-#home #posts ul li a.blog-title,
-#home #posts ul li p.blog-title {
+ul.post-list li a.blog-title,
+ul.post-list li p.blog-title {
   font-size: 19px;
   float: left;
   font-weight: 600;
 }
-#home #posts ul li a.blog-date,
-#home #posts ul li p.blog-date {
+ul.post-list li a.blog-date,
+ul.post-list li p.blog-date {
   font-weight: 100;
   font-size: 13px;
   clear: both;
   text-transform: uppercase;
 }
-#home #posts ul li a.blog-tags,
-#home #posts ul li p.blog-tags {
+ul.post-list li a.blog-tags,
+ul.post-list li p.blog-tags {
   float: right;
   display: inline-block;
   font-size: 12px;
