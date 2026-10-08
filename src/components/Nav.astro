@@ -1,0 +1,59 @@
+---
+const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
+
+const navItems = [
+  { label: "home", href: "/" },
+  { label: "blog", href: "/blog" },
+  { label: "projects", href: "/projects" },
+  { label: "me", href: "/me" },
+];
+---
+
+<nav id="main-nav">
+  <ul>
+    {navItems.map(({ label, href }) => {
+      const isCurrent = currentPath === href;
+
+      return (
+        <li class:list={{ current: isCurrent }}>
+          <a href={href} title={label} aria-current={isCurrent ? "page" : undefined}>
+            {label}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</nav>
+
+<style>
+  #main-nav {
+    padding: 20px 0;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      li {
+        padding: 10px;
+        display: inline-block;
+        text-align: center;
+
+        a {
+          font-weight: bold;
+          font-size: 0.85em;
+          text-decoration: none;
+          color: #323232;
+
+          &:hover {
+            border-bottom: 3px dotted #ffd640;
+          }
+        }
+
+        &.current a {
+          border-bottom: 3px dotted #ffd640;
+        }
+      }
+    }
+  }
+</style>
